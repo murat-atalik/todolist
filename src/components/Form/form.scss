@@ -1,0 +1,29 @@
+@import './../../style/variables';
+
+.form-container {
+  display: flex;
+}
+.form-input {
+  padding: 8px;
+  outline: none;
+  width: 100%;
+  border: 1px solid $primary-btn;
+  border-radius: 8px 0px 0px 8px;
+  @extend %chalk-font;
+}
+.create-btn {
+  @extend %primary-btn;
+  border-radius: 0px 8px 8px 0px;
+  width: 70px;
+}
+.create-btn-disabled {
+  @extend %primary-btn;
+  border-radius: 0px 8px 8px 0px;
+  width: 70px;
+  background-color: $grey-100;
+  color: $grey-300;
+  &:hover {
+    background-color: $grey-100;
+    cursor: not-allowed;
+  }
+}

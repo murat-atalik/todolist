@@ -1,0 +1,33 @@
+@import './../../style/variables';
+
+%clean-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: $paragraph-color;
+  @extend %chalk-font;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+}
+.todo-container {
+  width: 100%;
+  position: relative;
+}
+
+.todo-button-done {
+  text-decoration: line-through;
+  @extend %clean-btn;
+}
+.todo-button-waiting {
+  @extend %clean-btn;
+}
+.line-break {
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid $grey-500;
+}

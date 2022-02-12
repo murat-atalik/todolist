@@ -1,0 +1,48 @@
+$background: #edf2f4;
+$container-background: #fbfeff;
+
+$primary-btn: #8d99ae;
+$primary-btn-hover: #2b2d42;
+
+$paragraph-color: #000;
+
+$grey-500: #3e3e3e;
+$grey-400: #525252;
+$grey-300: #555555;
+$grey-200: #99a0a7;
+$grey-100: #b1b1b1;
+
+$white-500: #ebebeb;
+$white-400: #eaeaea;
+$white-300: #f4f4f4;
+$white-200: #f2f2f2;
+$white-100: #ffffff;
+
+%chalk-font {
+  font-family: Pangolin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+%default-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  @extend %chalk-font;
+}
+
+%primary-btn {
+  color: $white-100;
+  background-color: $primary-btn;
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+  @extend %default-btn;
+}
