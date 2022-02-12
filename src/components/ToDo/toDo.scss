@@ -20,9 +20,11 @@
 .todo-button-done {
   text-decoration: line-through;
   @extend %clean-btn;
+  word-break: break-all;
 }
 .todo-button-waiting {
   @extend %clean-btn;
+  word-break: break-all;
 }
 .line-break {
   width: 100%;
